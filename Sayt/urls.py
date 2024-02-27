@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 
 
-from .views import Home
+from .views import Home, Clock, PythonAnywhere
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home.as_view(), name='home'),
+    path('clock/', Clock.as_view(), name='clock'),
+    path('pythonanywhere/', PythonAnywhere.as_view(), name='pythonanywhere'),
 ]
