@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>GitHub-ga Projectni Deploy Qilish</title>
+  <title>WhiteNoise O'rnatish</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -81,7 +81,7 @@
           <h2></h2>
           <ol>
             <li><a href="{% url 'home'%}">Home</a></li>
-            <li>GitHub-ga Upload Qilish</li>
+            <li>WhiteNoise O'rnatish</li>
           </ol>
         </div>
 
@@ -91,59 +91,31 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 offset-1">
-          <h2 style="text-align: center">GitHub-ga Upload Qilish</h2>
+          <h2 style="text-align: center">WhiteNoise O'rnatish</h2>
           <br />
             <details>
               <summary>1) Birinchi Qadam:</summary>
-              <p>Git ni kompyuterga ustanovka qilish --> Yuklab olish uchun <a href="https://git-scm.com/">Bosing</a></p>
+              <p>PowerShell-ni Ochib env(Muhit) ni aktivatsiya qilamiz:</p>
+              <div class="container">
+                <p>pip install whitenoise</p>
+              </div>
             </details>
             <details>
               <summary>2) Ikkinchi Qadam:</summary>
-              <p>GitHub ga utib yangi repository oching</p>
-              <p>
-                <picture>
-                  <source srcset="{% static 'assets/img/21.jpg'%}" type="image/svg+xml">
-                  <img src="{% static 'assets/img/21.jpg'%}" class="img-fluid img-thumbnail" alt="..."><hr>
+              <p>1) Proyektimmizdagi setting.py ni ochamiz va "MIDDLEWARE" qismiga o'tamiz</p>
+                <p><picture>
+                  <source srcset="{% static 'assets/img/22.jpg'%}" type="image/svg+xml">
+                  <img src="{% static 'assets/img/22.jpg'%}" class="img-fluid img-thumbnail" alt="..."><hr>
                 </picture>
+                <p>2) "django.middleware.security.SecurityMiddleware", - Shuni takiga buni yozamiz --> "whitenoise.middleware.WhiteNoiseMiddleware",</p>
               </p>
-              <p>Shuni Copy Qilasiz</p>
             </details>
             <details>
-              <summary>3) Uchinchi Qadam:</summary>
-              <p>Git ni konfiguratsiya qilish:</p>
-              <div class="container">
-                <p>1) PowerShell ni oching:</p>
-                <div class="container">
-                  <p>1) git config -1</p>
-                  <p>2) git config --global user.email "Siznig Emailingiz"</p>
-                  <p>3) git config user.email "Siznig Emailingiz"</p>
-                  <p>4) git config --global user.name "Siznig Nomingiz"</p>
-                  <p>5) git config user.name "Siznig Nomingiz"</p>
-                </div>
-                <p>2) PowerShell da Proyektingizni ichiga kirib env(Muhit) ni activate qiling:</p>
-                <div class="container">
-                  <p>1) proyektingizni qatoriga ".gitignora degan fayl oching"</p>
-                  <p>2) PowerShell ga uting:</p>
-                  <div class="container">
-                    <p>1) git init #git papka yaratadi</p>
-                    <p>2) git add .</p>
-                    <p>3) git commit -m "xoxlagan narsani yozaverasiz"</p>
-                    <p>4) git branch -M master</p>
-                    <p>5) git remote add origin sizning git hub copy qilgan linkingiz</p>
-                    <p>6) git push -u origin master</p>
-                  </div>
-                </div>
-              </div>
+              <summary>3) Uchinchi Qadam(So'ngi):</summary>
+              <p>PowerShell-ni Ochib env(Muhit) ni aktivatsiya qilamiz:</p>
+                <p> pip freeze > requirements.txt</p>
             </details>
-            <details>
-              <summary>GitHub-ga qayta upload qilish:</summary>
-              <p>PowerShell-ga utib:</p>
-              <div class="container">
-                <p>1) git add .</p>
-                <p>2) git commit -m "xoxlagan narsani yozaverasiz"</p>
-                <p>3) git push -u origin master</p>
-              </div>
-            </details>
+            
         </div>
       </div>
       <!-- <p class="source">Source: <a href="https://www.lipsum.com/">Lipsum</a></p> -->

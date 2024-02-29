@@ -26,6 +26,7 @@
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style_detail.css'%}" rel="stylesheet">
   <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
 
   <!-- =======================================================
@@ -61,7 +62,7 @@
         <ul>
           <li><a href="{%url 'home'%}#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="{%url 'home'%}#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <!-- <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li> -->
+          <li><a href="{%url 'home'%}#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="{%url 'home'%}#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
           <li><a href="{%url 'home'%}#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -77,7 +78,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Pythonanywhere-ga Upload Qilish</h2>
+          <h2></h2>
           <ol>
             <li><a href="{% url 'home'%}">Home</a></li>
             <li>Pythonanywhere-ga Upload Qilish</li>
@@ -87,131 +88,131 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-<!--  -->
-        <details>
-          <summary>
-            <span class="summary-title">Details element with custom arrow!</span>
-            <div class="summary-chevron-up">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </div>
-          </summary>
-        
-          <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
-            my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
-          <div class="summary-chevron-down">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
-            
-        </details>
-        <!--  -->
-
-
-        <h2>1)Birinchi Qadam:</h2>
-        
-          <h3>Proyektingizni settings.py da</h3><br>
-          <pre><span>ALLOWED_HOSTS = ['*']</span></pre>
-          <picture>
-            <source srcset="{% static 'assets/img/step1.jpg'%}" type="image/svg+xml">
-            <img src="{% static 'assets/img/step1.jpg'%}" class="img-fluid img-thumbnail" alt="..."><hr>
-          </picture>
-          <!-- <img style="width: auto; height: 300px;" src="{% static 'assets/img/step1.jpg'%}" class="img-fluid" alt=""><hr> -->
-        
-        <h2>2)Ikkinchi Qadam:</h2>
-        
-          <h3>PowerShell da proyektingizni muhitini yoqib</h3> <pre><span>pip freeze &gt; requirements.txt
-          </span></pre><hr>
-        
-        <h2>3)Uchinchi Qadam:</h2>
-          <h3>Proyektingizni GitHubga yuklash</h3><hr>
-        
-        <h2>4)To'rtinchi Qadam:</h2>
-        <h3>Pythonanywhere-da hisob yarating - <a href="https://www.pythonanywhere.com/registration/register/beginner/">Bu yerni bosing</a>. Ro'yxatdan o'tgandan so'ng siz sahifani shunday ko'rishingiz mumkin</h3>
-          <br>
-          <picture>
-            <source srcset="{% static 'assets/img/step4.png'%}" type="image/svg+xml">
-            <img src="{% static 'assets/img/step4.png'%}" class="img-fluid img-thumbnail" alt="...">
-          </picture><hr>
-
-          <h2>Endi Konsol-ni bosing, keyin Bash-ni tanlang, siz shunday ko'rasiz</h2>
-          <picture>
-            <source srcset="{% static 'assets/img/5.png'%}" type="image/svg+xml">
-            <img src="{% static 'assets/img/5.png'%}" class="img-fluid img-thumbnail" alt="...">
-          </picture><hr>
-        
-          <h2>GitHub Dan Proyekt Linkini Olish</h2>
-          <picture>
-            <source srcset="{% static 'assets/img/6.jpg'%}" type="image/svg+xml">
-            <img src="{% static 'assets/img/6.jpg'%}" class="img-fluid img-thumbnail" alt="...">
-          </picture><hr>
-          <h2>Bash-da quyidagi buyruqlarni bajaring:
-
-            GitHub proyekt-ni klonlash</h2>
-            <pre><span>git clone sizning github proyekt linkingiz
-            </span></pre>
-          <pre><span>
-cd Proyektingiz nomi/
-python -m venv yangi muhit nomi #Muhit yaratish
-source muhitingiz nomi/bin/activate #Muhitni activatsiya qilish
-pip install -r requirements.txt #Muhit ga keraklik barcha narsani urnatadi masalan:django, pillow va hokazo
-            </span></pre>
-
-            <pre><span>
-pwd
-
-va pwd qilgandan so'ng chiqqan yo'nalishni copy qilasiz
-            </span></pre>
-            <hr>
-
-            <h2>Yaxshi, biz loyihamizni muvaffaqiyatli o'rnatdik. Endi Veb-ni bosing va keyin Yangi veb-ilovani qo'shish-ni tanlang</h2>
-            <picture>
-              <source srcset="{% static 'assets/img/7.png'%}" type="image/svg+xml">
-              <img src="{% static 'assets/img/7.png'%}" class="img-fluid img-thumbnail" alt="...">
-            </picture>
-            <hr>
-          
-            <h2>Keyingi tugmasini bosing va protsedurani bajaring
-
-              Django ni tanlang</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 offset-1">
+          <br><h2 style="text-align: center">Pythonanywhere-ga Upload Qilish</h2>
+          <br />
+            <details>
+              <summary>1) Birinchi Qadam:</summary>
+              <p>Proyektingizni settings.py da</p>
+              <p>ALLOWED_HOSTS = ['*']</p>
               <picture>
+                <source srcset="{% static 'assets/img/step1.jpg'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/step1.jpg'%}" class="img-fluid img-thumbnail" alt="..."><hr>
+              </picture>
+            </details>
+            <details>
+              <summary>2) Ikkinchi Qadam:</summary>
+              <p>PowerShell da proyektingizni muhitini yoqib</p>
+              <p>pip freeze &gt; requirements.txt</p>
+              <p>Shuni Copy Qilasiz</p>
+            </details>
+            <details>
+              <summary>3) Uchinchi Qadam:</summary>
+              <p>Pythonanywhere-da hisob yarating - <a href="https://www.pythonanywhere.com/registration/register/beginner/">Bu yerni bosing</a>. Ro'yxatdan o'tgandan so'ng siz sahifani shunday ko'rishingiz mumkin</p>
+              <picture>
+                <source srcset="{% static 'assets/img/step4.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/step4.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture>
+            </details>
+            <details>
+              <summary>4) To'rtinchi Qadam:</summary>
+              <p>Endi Konsol-ni bosing, keyin Bash-ni tanlang, siz shunday ko'rasiz</p>
+              <picture>
+                <source srcset="{% static 'assets/img/5.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/5.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture>
+            </details>
+            <details>
+              <summary>5) Beshinchi Qadam:</summary>
+              <p>GitHub Dan Proyekt Linkini Olish</p>
+              <picture>
+                <source srcset="{% static 'assets/img/5.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/5.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture>
+            </details>
+            <details>
+              <summary>6) Oltinchi Qadam:</summary>
+              <p>Bash-da quyidagi buyruqlarni bajaring:</p>
+              <div class="container">
+                <p>git clone sizning github proyekt linkingiz</p>
+                <p>cd Proyektingiz nomi/</p>
+                <p>python -m venv yangi muhit nomi #Muhit yaratish</p>
+                <p>source muhitingiz nomi/bin/activate #Muhitni activatsiya qilish</p>
+                <p>pip install -r requirements.txt #Muhit ga keraklik barcha narsani urnatadi masalan:django, pillow va hokazo</p>
+                <p>pwd</p>
+                <h5>va pwd qilgandan so'ng chiqqan yo'nalishni copy qilasiz</h5>
+              </div>
+            </details>
+            <details>
+              <summary>7) Yettinchi Qadam:</summary>
+              <p>Yaxshi, biz loyihamizni muvaffaqiyatli o'rnatdik. Endi Web-ni bosing va keyin Yangi Web-ilovani qo'shish-ni tanlang</p>
+              <picture>
+                <source srcset="{% static 'assets/img/7.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/7.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture>
+            </details>
+            <details>
+              <summary>8) Sakkizinchi Qadam:</summary>
+              <p>1) Keyingi tugmasini bosing va protsedurani bajaring</p>
+              <p>2) Django ni tanlang</p>
+              <div class="container"><picture>
                 <source srcset="{% static 'assets/img/9.png'%}" type="image/svg+xml">
                 <img src="{% static 'assets/img/9.png'%}" class="img-fluid img-thumbnail" alt="...">
-              </picture><hr>
-            
-              <h2>Python (oxirgi) ni tanlang keyingi tugmasini bosing.</h2>
-              <picture>
+              </picture></div>
+              <p>3) Python (oxirgi) ni tanlang keyingi tugmasini bosing</p>
+              <div class="container"><picture>
                 <source srcset="{% static 'assets/img/10.png'%}" type="image/svg+xml">
                 <img src="{% static 'assets/img/10.png'%}" class="img-fluid img-thumbnail" alt="...">
-              </picture><hr>
-            <h2>Endi veb-bo'lim ostida WSGI konfiguratsiya faylini oching.</h2>
-            <picture>
-              <source srcset="{% static 'assets/img/11.png'%}" type="image/svg+xml">
-              <img src="{% static 'assets/img/11.png'%}" class="img-fluid img-thumbnail" alt="...">
-            </picture><hr>
-            <h2>WSGI konfiguratsiya faylini №1 qatorda tahrirlang. 12 va 17-sonli GitHub'dan klonlagan loyiha nomi bilan mysite so'zini olib tashlang, mening holimda u deploy_on_pythonanywhere. Va 17-qatorda Webingizni nomini yozing mendav mysite</h2>
-            <picture>
-              <source srcset="{% static 'assets/img/12.png'%}" type="image/svg+xml">
-              <img src="{% static 'assets/img/12.png'%}" class="img-fluid img-thumbnail" alt="...">
-            </picture><hr>
-            <h2>Endi u shunday ko'rinadi va keyin save tugmasini bosing:</h2>
-            <picture>
-              <source srcset="{% static 'assets/img/13.png'%}" type="image/svg+xml">
-              <img src="{% static 'assets/img/13.png'%}" class="img-fluid img-thumbnail" alt="...">
-            </picture><hr>
-            <h2>Veb ostida Virtualenv bo'limini tanlang:</h2>
-            <picture>
-              <source srcset="{% static 'assets/img/14.png'%}" type="image/svg+xml">
-              <img src="{% static 'assets/img/14.png'%}" class="img-fluid img-thumbnail" alt="...">
-            </picture><hr>
-          <h2>Biz bash yordamida yaratganimizdek Virtualenv yo'lini kiriting (yo'l uchun yuqoridagi pwd buyrug'iga qarang)</h2>
-          <picture>
-            <source srcset="{% static 'assets/img/15.png'%}" type="image/svg+xml">
-            <img src="{% static 'assets/img/15.png'%}" class="img-fluid img-thumbnail" alt="...">
-          </picture><hr>
-          <br><br><br>
-          <h1>Endi Web ni teva qismidan Reload tugmasini bosing va saytni ishlating</h1>
+              </picture></div>
+              <p>4) Endi veb-bo'lim ostida WSGI konfiguratsiya faylini oching</p>
+              <div class="container"><picture>
+                <source srcset="{% static 'assets/img/11.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/11.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture></div>
+              <p>WSGI konfiguratsiya faylini №1 qatorda tahrirlang. 12 va 17-sonli GitHub'dan klonlagan loyiha nomi bilan mysite so'zini olib tashlang, mening holimda u deploy_on_pythonanywhere. Va 17-qatorda Webingizni nomini yozing mendav mysite</p>
+              <div class="container"><picture>
+                <source srcset="{% static 'assets/img/12.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/12.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture></div>
+              <p>Endi u shunday ko'rinadi va keyin save tugmasini bosing:</p>
+              <div class="container"><picture>
+                <source srcset="{% static 'assets/img/13.png'%}" type="image/svg+xml">
+                <img src="{% static 'assets/img/13.png'%}" class="img-fluid img-thumbnail" alt="...">
+              </picture></div>
+            </details>
+            <details>
+              <summary>9) To'qqizinchi Qadam:</summary>
+              <p>Web ostida Virtualenv bo'limini tanlang:</p>
+              <div class="container">
+                <picture>
+                  <source srcset="{% static 'assets/img/14.png'%}" type="image/svg+xml">
+                  <img src="{% static 'assets/img/14.png'%}" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+              </div>
+              <p>Biz bash yordamida yaratganimizdek Virtualenv yo'lini kiriting (yo'l uchun yuqoridagi pwd buyrug'iga qarang)</p>
+              <div class="container">
+                <picture>
+                  <source srcset="{% static 'assets/img/15.png'%}" type="image/svg+xml">
+                  <img src="{% static 'assets/img/15.png'%}" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+              </div>
+            </details>
+            <details>
+              <summary>10) O'ninchi Qadam(So'ngi)</summary>
+              <p>Endi Web ni teva qismidan Reload tugmasini bosing va saytni ishlating:</p>
+              <div class="container">
+                <picture>
+                  <source srcset="{% static 'assets/img/16.jpg'%}" type="image/svg+xml">
+                  <img src="{% static 'assets/img/16.jpg'%}" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+              </div>
+            </details>
+        </div>
       </div>
-    </section>
+      <!-- <p class="source">Source: <a href="https://www.lipsum.com/">Lipsum</a></p> -->
+    </div>
 
   </main><!-- End #main -->
 

@@ -18,12 +18,12 @@ from django.contrib import admin
 from django.urls import path
 
 
-from .views import Home, Clock, PythonAnywhere, GitHub
-
+from .views import Home, Clock, PythonAnywhere, GitHub, WhiteNoise
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home.as_view(), name='home'),
     path('clock/', Clock.as_view(), name='clock'),
     path('pythonanywhere/', PythonAnywhere.as_view(), name='pythonanywhere'),
     path('github/', GitHub.as_view(), name='github'),
+    path('whitenoise/', WhiteNoise.as_view(), name='whitenoise'),
 ]

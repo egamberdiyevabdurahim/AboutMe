@@ -20,3 +20,8 @@ class PythonAnywhere(View):
 class GitHub(View):
     def get(self, request):
         return render(request, 'github.html')
+
+
+class WhiteNoise(View):
+    def get(self, request):
+        return render(request, 'whitenoise.html')
