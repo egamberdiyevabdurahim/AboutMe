@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path
 
 
-from .views import Home, Clock, PythonAnywhere, GitHub, WhiteNoise
+from .views import Home, Clock, PythonAnywhere, GitHub, WhiteNoise, AboutGadget
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home.as_view(), name='home'),
+    path('about-gadget/', AboutGadget.as_view(), name='about-gadget'),
     path('clock/', Clock.as_view(), name='clock'),
     path('pythonanywhere/', PythonAnywhere.as_view(), name='pythonanywhere'),
     path('github/', GitHub.as_view(), name='github'),

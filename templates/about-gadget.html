@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CorsHeaders O'rnatish</title>
+  <title>GitHub-ga Projectni Deploy Qilish</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -81,7 +81,7 @@
           <h2></h2>
           <ol>
             <li><a href="{% url 'home'%}">Home</a></li>
-            <li>CorsHeaders O'rnatish</li>
+            <li>About Gadget</li>
           </ol>
         </div>
 
@@ -91,26 +91,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 offset-1">
-          <h2 style="text-align: center">CorsHeaders O'rnatish</h2>
-          <br />
-            <details>
-              <summary>1) Birinchi Qadam:</summary>
-              <p>PowerShell-ni Ochib env(Muhit) ni aktivatsiya qilamiz:</p>
-              <div class="container">
-                <p>pip install django-cors-headers</p>
-              </div>
-            </details>
-            <details>
-              <summary>2) Ikkinchi Qadam(So'ngi):</summary>
-              <p>1) Proyektimmizdagi setting.py ni ochamiz va "INSTALLED_APPS" qismiga o'tamiz</p>
-                <p><picture>
-                  <source srcset="{% static 'assets/img/23.jpg'%}" type="image/svg+xml">
-                  <img src="{% static 'assets/img/23.jpg'%}" class="img-fluid img-thumbnail" alt="..."><hr>
-                </picture>
-                <p>2) "corsheaders", - Shuni eng takiga yozamiz</p>
-              </p>
-            </details>
-            
+          <!-- <div class="container"> -->
+            <ul class="list-group">
+                <li class="list-group-item">Operatsion tizim: <b>{{pcplatform.Operatsion_tizim}}</b></li>
+                <li class="list-group-item">Operatsion tizimning chiqarilishi: <b>{{pcplatform.Operatsion_tizimning_chiqarilishi}}</b></li>
+                <li class="list-group-item">Platforma: <b>{{pcplatform.Platforma}}</b></li>
+                <li class="list-group-item">Arxitektura: <b>{{pcplatform.Arxitektura}}</b></li>
+                <li class="list-group-item">Bit: <b>{{pcplatform.Bit}}</b></li>
+                <li class="list-group-item">Versiya: <b>{{pcplatform.Versiya}}</b></li>
+                <li class="list-group-item">Tarmoq nomi: <b>{{pcplatform.Tarmoq_Nomi}}</b></li>
+                <li class="list-group-item">Protsessor: <b>{{pcplatform.Protsessor}}</b></li>
+                <li class="list-group-item">Xotira: <b>{{pcplatform.Xotira}}</b></li>
+                <li class="list-group-item">Disk: <b>{{pcplatform.Disk}}</b></li>
+              </ul>
+        <!-- </div> -->
         </div>
       </div>
       <!-- <p class="source">Source: <a href="https://www.lipsum.com/">Lipsum</a></p> -->
